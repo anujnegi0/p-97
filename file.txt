@@ -1,0 +1,4 @@
+class Student(object):
+     def _init_(self,name,age,grades=None,gender,level):
+     self.name=
+ 

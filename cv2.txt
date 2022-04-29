@@ -1,0 +1,13 @@
+ import cv2
+ def take_snapshot()
+ #inztilizing cv2
+     videoCaptureObject=cv2.VideoCapture(0)
+     result =True        
+     while(result):    
+           #read the frame while the camera is on
+           ret,frame = videoCaptureObject.read()              
+           #cv2.imWrite()method is used to save an image to any storage device 
+           cv2.imWrite("trex4.png",frame)
+           result=false
+           videoCaptureObject.release()
+           #release the camera
